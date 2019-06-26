@@ -8,7 +8,7 @@ def run_pump():
     pump1.active_high = False
     pump1.toggle()
 
-    sleep(.25)
+    sleep(.1)
     pump1.toggle()
 
 
