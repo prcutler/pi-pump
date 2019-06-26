@@ -3,7 +3,8 @@ from time import sleep
 
 pump1 = OutputDevice(4)
 
-def run_pump:
+
+def run_pump():
     pump1.on()
     sleep(5)
     pump1.off()
