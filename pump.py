@@ -1,5 +1,9 @@
 from gpiozero import OutputDevice
 from time import sleep
+import sentry_sdk
+
+
+sentry_sdk.init("https://40a7906637fe4943a09f8682e6235b43@sentry.io/1492001")
 
 pump1 = OutputDevice(4)
 
