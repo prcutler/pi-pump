@@ -3,7 +3,7 @@ from time import sleep
 import sentry_sdk
 
 
-sentry_sdk.init("https://40a7906637fe4943a09f8682e6235b43@sentry.io/1492001")
+sentry_sdk.init("https://dfe1f1ad68ac4df8abe1479c6dedb280@sentry.io/1492008")
 
 pump1 = OutputDevice(4)
 
