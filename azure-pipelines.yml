@@ -28,6 +28,17 @@ steps:
     pip install -r requirements.txt
   displayName: 'Install dependencies'
 
+# Create a variable
+# Note that this does _not_ update the environment of the current script.
+- script: |
+    echo '##vso[task.setvariable variable=codecov]CODECOV'
+
+# An environment variable called `CODECOV` has been added to all downstream steps
+- bash: |
+    echo my environment variable is CODECOV
+- pwsh: |
+    Write-Host "my environment variable is $env:CODECOV"
+
 - script: |
     pip install pytest pytest-azurepipelines
     pip install pytest-cov
@@ -41,6 +52,7 @@ steps:
   condition: succeededOrFailed()
 
 - script: |
+    codecov --token=codecov
     bash <(curl https://codecov.io/bash) -t 2e94c02d-e60d-4115-9fad-ac1571be0d86 -f coverage.xml -F adder -F subtractor
   displayName: 'codecov'
 
