@@ -61,8 +61,3 @@ steps:
     codeCoverageTool: Cobertura
     summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage.xml'
     reportDirectory: '$(System.DefaultWorkingDirectory)/**/htmlcov'
-
-- job: 'Publish'
-  dependsOn: 'Test'
-  pool:
-    vmImage: 'Ubuntu-latest'
