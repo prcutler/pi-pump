@@ -52,6 +52,7 @@ steps:
   condition: succeededOrFailed()
 
 - script: |
+    pip install codecov
     codecov --token=codecov
     bash <(curl https://codecov.io/bash) -t 2e94c02d-e60d-4115-9fad-ac1571be0d86 -f coverage.xml -F adder -F subtractor
   displayName: 'codecov'
