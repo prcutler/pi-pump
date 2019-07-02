@@ -36,17 +36,6 @@ from gpiozero import Device
 from gpiozero.pins.mock import MockFactory, MockPWMPin
 
 
-# NOTE: Work-around for python versions <3.4: in these versions the
-# resetwarnings function in the warnings module doesn't do much (or doesn't do
-# what most would expect). Warnings that have already been triggered still
-# won't be re-triggered even after the call. To work-around this we set the
-# default filter to "always" on these versions before running any tests. Note
-# that this does mean you should run resetwarnings() whenever using
-# catch_warnings()
-if sys.version_info[:2] < (3, 4):
-    warnings.simplefilter('always')
-
-
 @pytest.yield_fixture()
 def no_default_factory(request):
     save_pin_factory = Device.pin_factory
