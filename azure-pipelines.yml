@@ -53,7 +53,7 @@ steps:
 
 - script: |
     pip install codecov
-    codecov --token=codecov
+    codecov --token=codecov_token
     bash <(curl https://codecov.io/bash) -t a4602678-992c-4b6b-ac78-759a3791dfac -f coverage.xml -F adder -F subtractor
   displayName: 'codecov'
 
