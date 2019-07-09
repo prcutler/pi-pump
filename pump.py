@@ -5,7 +5,7 @@ import sentry_sdk
 
 # TODO: Add code comments to make it easier for a user to add additional pumps
 
-sentry_sdk.init("https://dfe1f1ad68ac4df8abe1479c6dedb280@sentry.io/1492008")
+sentry_sdk.init("https://40a7906637fe4943a09f8682e6235b43@sentry.io/1492001")
 
 # Assign the pump based on what pin the Raspberry Pi is using
 pump1 = OutputDevice(4)
