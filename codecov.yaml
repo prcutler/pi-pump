@@ -1,0 +1,25 @@
+coverage:
+  status:
+    project:
+      default: off
+      adder:
+        flags: adder
+      subtractor:
+        target: 50%
+        flags: subtractor
+flags:
+  adder:
+    paths:
+      - src/adder/
+    assume: true
+  subtractor:
+    paths:
+      - src/subtractor/
+    assume: true
+  tests:
+    paths:
+      - tests/
+
+codecov:
+  ci:
+    - dev.azure.com
