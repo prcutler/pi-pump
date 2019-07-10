@@ -29,7 +29,7 @@ steps:
 # Create a variable
 # Note that this does _not_ update the environment of the current script.
 - script: |
-    echo '##vso[task.setvariable variable=codecov]CODECOV'
+    echo '##vso[task.setvariable variable=codecov_token]CODECOV'
 
 # An environment variable called `CODECOV` has been added to all downstream steps
 - bash: |
