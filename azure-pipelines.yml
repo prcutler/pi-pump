@@ -52,7 +52,7 @@ steps:
 - script: |
     pip install codecov
     codecov --token=codecov_token
-    bash <(curl https://codecov.io/bash) -t codecov_token -f coverage.xml -F adder -F subtractor
+    bash <(curl https://codecov.io/bash) -t CODECOV -f coverage.xml -F adder -F subtractor
   displayName: 'codecov'
 
 - task: PublishCodeCoverageResults@1
