@@ -19,13 +19,16 @@ def pump_on():
 
 # Pump is now running - Define how long the pump should run in seconds in the on position from run_pump above:
 def pump_time():
-    sleep(5)
+    seconds = 5
+    sleep(seconds)
 
 
 # Toggle the pump into the off position and pause (in seconds):
 def pump_stop():
     pump1.toggle()
-    sleep(2)
+
+    pause_seconds = 2
+    sleep(pause_seconds)
 
 
 # Define how many times (cycles) the pump should turn on, then pause, and then turn off again:
