@@ -13,7 +13,7 @@ def test_pump_on(mock_factory):
     assert not pump1.state
 
 
-def test_pump_time()
+def test_pump_time():
     pass
 
 
