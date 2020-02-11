@@ -37,9 +37,9 @@ while True:
     StepCounter += StepDir
 
     # If we reach the end of the sequence start again
-    if (StepCounter >= StepCount):
+    if StepCounter >= StepCount:
         StepCounter = 0
-    if (StepCounter < 0):
+    if StepCounter < 0:
         StepCounter = StepCount+StepDir
 
     # Wait Before Moving On
