@@ -1,13 +1,13 @@
 import time
 from gpiozero import OutputDevice as stepper
 
-IN1 = stepper(25)
-IN2 = stepper(8)
+IN1 = stepper(23)
+IN2 = stepper(24)
 IN3 = stepper(7)
 IN4 = stepper(11)
 StepPins = [IN1, IN2, IN3, IN4]
 
-# Define sequence as shown in manufactuers data sheet
+# Define sequence as shown in manufacturers data sheet
 Seq = [[1, 0, 0, 1],
        [1, 0, 0, 0],
        [1, 1, 0, 0],
