@@ -3,8 +3,8 @@ import RPi.GPIO as GPIO
 
 ## This code uses the RPi.GPIO Python Package - not gpiozero like the original pump
 
-DIR = 20   # Direction GPIO Pin
-STEP = 21  # Step GPIO Pin
+DIR = 23   # Direction GPIO Pin
+STEP = 24  # Step GPIO Pin
 CW = 1     # Clockwise Rotation
 CCW = 0    # Counterclockwise Rotation
 SPR = 48   # Steps per Revolution (360 / 7.5)
