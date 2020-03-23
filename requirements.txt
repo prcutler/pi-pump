@@ -13,7 +13,7 @@ pyparsing==2.4.6
 pytest==5.4.1
 python-dateutil==2.8.1
 pytzdata==2019.3
-sentry-sdk==0.14.2
+sentry-sdk==0.14.3
 six==1.14.0
 urllib3==1.25.8
 wcwidth==0.1.9
