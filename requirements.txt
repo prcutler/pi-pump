@@ -6,7 +6,7 @@ gpiozero==1.5.1
 importlib-metadata==1.7.0
 more-itertools==8.4.0
 packaging==20.4
-pendulum==2.1.0
+pendulum==2.1.1
 pluggy==0.13.1
 py==1.9.0
 pyparsing==2.4.7
