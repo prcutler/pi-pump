@@ -5,7 +5,7 @@ colorzero==1.1
 gpiozero==1.5.1
 importlib-metadata==3.3.0
 more-itertools==8.6.0
-packaging==20.7
+packaging==20.8
 pendulum==2.1.2
 pluggy==0.13.1
 py==1.9.0
