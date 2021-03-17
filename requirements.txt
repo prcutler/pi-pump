@@ -18,3 +18,5 @@ six==1.15.0
 urllib3==1.26.4
 wcwidth==0.2.5
 zipp==3.4.1
+
+rpimotorlib~=2.7
