@@ -1,6 +1,6 @@
 atomicwrites==1.4.0
 attrs==21.2.0
-certifi==2020.12.5
+certifi==2021.5.30
 colorzero==2.0
 gpiozero==1.6.2
 importlib-metadata==4.3.0
